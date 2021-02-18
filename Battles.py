@@ -79,7 +79,7 @@ def Battles(player, machine):
             print(vermelho + f"Paladin: -{menoslife1}HP".center(150))
             print(verde + f"Paladin: {life_paladin}HP".center(150))
 
-            sleep(1)
+            sleep(2)
 
             menoslife2 = 0
             fighting_warrior = life_warrior - menoslife2
@@ -98,8 +98,52 @@ def Battles(player, machine):
                 break
 
     ### Paladin vs Shooter
+    if player == 2 and machine == 3 or player == 3 and machine == 2:
+        print(cinza + "=" * 150)
+
+        life_paladin = 90
+        life_shooter = 50
 
     ### Shooter vs Wizard
+    if player == 3 and machine == 4 or player == 4 and machine == 3:
+        print(cinza + "=" * 150)
+
+        life_shooter = 50
+        life_wizard = 60
+
+        power_shooter = [28, 8, 12]
+        power_wizard = [26, 12, 16]
+
+        while life_shooter > 0 or life_wizard > 0:
+            print(branco + f"-- {rounds}ª Round --".center(150))
+            print(cinza + "-" * 150)
+
+            rounds+=1
+
+            menoslife1 = 26 - 8
+            fight_shooter = life_shooter - menoslife1
+            life_shooter = fight_shooter
+
+            print(branco + "- Attack Wizard -".center(150))
+            print(vermelho + f"Shooter: -{menoslife1}HP".center(150))
+            print(verde + f"Shooter: {life_shooter}HP".center(150))
+
+            sleep(2)
+
+            menoslife2 = 28 - 12
+            fight_wizard = life_wizard - menoslife2
+            life_wizard = fight_wizard
+
+            print(branco + "- Attack Shooter -".center(150))
+            print(vermelho + f"Wizard: -{menoslife2}HP".center(150))
+            print(verde + f"Wizard: {life_wizard}HP".center(150))
+
+            print(cinza + "-" * 150)
+
+            if life_shooter <= 0:
+                break
+            if life_wizard <= 0:
+                break
 
     ### Wizard vs Assassin
 
