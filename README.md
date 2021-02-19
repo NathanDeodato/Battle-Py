@@ -9,9 +9,9 @@
 
     Warrior = HP80 / ATK26 / DEF20 / VEL22
     Paladin = HP90 / ATK20 / DEF26 / VEL6
-    Shooter = HP50 / ATK28 / DEF8 / VEL12
+    Shooter = HP55 / ATK36 / DEF8 / VEL12
     Wizard = HP60 / ATK26 / DEF12 / VEL16
-    Assassin = HP70 / ATK30 / DEF14 / VEL26
+    Assassin = HP65 / ATK30 / DEF14 / VEL26
 </p>
 
 <br>
