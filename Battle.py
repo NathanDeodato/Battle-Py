@@ -43,7 +43,7 @@ while True:
         while player != 1 and player != 2 and player != 3 and player != 4 and player != 5:
             player = int(input(branco + "Selecione a classe: "))
         
-        machine = 4
+        machine = 5
         #machine = randint(1, 5)
 
         Battles(player, machine)
