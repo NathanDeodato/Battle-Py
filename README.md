@@ -16,8 +16,8 @@
 <br>
 
 ### 🖼 Image project
-![Battle-01](Caminho/da/imagem)
-![Battle-02](Caminho/da/imagem)
+![Battle-01](Img/Battle-01-py.png)
+![Battle-02](Img/Battle-02-py.png)
 
 ---
 
