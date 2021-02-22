@@ -49,8 +49,6 @@ def Battles(player, machine):
     print(f"Player: {info_player}")
     print(f"Machine: {info_machine}")
 
-    # FAZER A ALTERAÇÃO DOS ROUNDS, COLOCANDO UMA CONDIÇÃO ANINHADA, DEPOIS DE CADA FIGHT DENTRO DO LOOP
-
     ## Combats
     rounds = 1
 
@@ -85,6 +83,12 @@ def Battles(player, machine):
 
             sleep(2)
 
+            if life_paladin <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → WARRIOR WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
+
             menoslife2 = 0
             fighting_warrior = life_warrior - menoslife2
             life_warrior = fighting_warrior
@@ -92,6 +96,12 @@ def Battles(player, machine):
             print(branco + "- Attack Paladin -".center(150))
             print(vermelho + f"Warrior: -{menoslife2}HP".center(150))
             print(verde + f"Warrior: {life_warrior}HP".center(150))
+
+            if life_warrior <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → PALADIN WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
 
             print(cinza + "-" * 150)
 
@@ -123,6 +133,12 @@ def Battles(player, machine):
 
             sleep(2)
 
+            if life_paladin <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → SHOOTER WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
+
             menoslife2 = 20 - 8
             fight_shooter = life_shooter - menoslife2
             life_shooter = fight_shooter
@@ -130,6 +146,12 @@ def Battles(player, machine):
             print(branco + "- Attack Paladin -".center(150))
             print(vermelho + f"Shooter: -{menoslife1}HP".center(150))
             print(verde + f"Shooter: {life_shooter}HP".center(150))
+
+            if life_shooter <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → PALADIN WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
 
             print(cinza + "-" * 150)
 
@@ -161,6 +183,12 @@ def Battles(player, machine):
 
             sleep(2)
 
+            if life_shooter <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → WIZARD WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
+
             menoslife2 = 36 - 12
             fight_wizard = life_wizard - menoslife2
             life_wizard = fight_wizard
@@ -168,6 +196,12 @@ def Battles(player, machine):
             print(branco + "- Attack Shooter -".center(150))
             print(vermelho + f"Wizard: -{menoslife2}HP".center(150))
             print(verde + f"Wizard: {life_wizard}HP".center(150))
+
+            if life_wizard <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → SHOOTER WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
 
             print(cinza + "-" * 150)
 
@@ -199,6 +233,12 @@ def Battles(player, machine):
 
             sleep(2)
 
+            if life_wizard <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → SHOOTER WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
+
             menoslife2 = 28 - 14
             fight_assassin = life_assassin - menoslife2
             life_assassin = fight_assassin
@@ -206,6 +246,12 @@ def Battles(player, machine):
             print(branco + "- Attack Wizard -".center(150))
             print(vermelho + f"Assassin: -{menoslife2}HP".center(150))
             print(verde + f"Assassin: {life_assassin}HP".center(150))
+
+            if life_assassin <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → WIZARD WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
 
             print(cinza + "-" * 150)
 
@@ -237,6 +283,12 @@ def Battles(player, machine):
 
             sleep(2)
 
+            if life_warrior <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → ASSASSIN WIN ←".center(150))
+                print(cinza + "-" * 150)
+                break
+
             menoslife2 = 26 - 14
             fight_assassin = life_assassin - menoslife2
             life_assassin = fight_assassin
@@ -244,6 +296,12 @@ def Battles(player, machine):
             print(branco + "- Attack Warrior -".center(150))
             print(vermelho + f"Assassin: -{menoslife2}HP".center(150))
             print(verde + f"Assassin: {life_assassin}HP".center(150))
+
+            if life_assassin <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → WARRIOR WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
 
             print(cinza + "-" * 150)
 
@@ -275,6 +333,12 @@ def Battles(player, machine):
 
             sleep(2)
 
+            if life_shooter <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → WARRIOR WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
+
             menoslife2 = 36 - 20
             fight_warrior = life_warrior - menoslife2
             life_warrior = fight_warrior
@@ -282,6 +346,12 @@ def Battles(player, machine):
             print(branco + "- Attack Shooter -".center(150))
             print(vermelho + f"Warrior: -{menoslife2}HP".center(150))
             print(verde + f"Warrior: {life_warrior}HP".center(150))
+
+            if life_warrior <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → SHOOTER WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
 
             print(cinza + "-" * 150)
 
@@ -313,6 +383,12 @@ def Battles(player, machine):
 
             sleep(2)
 
+            if life_paladin <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → WIZARD WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
+
             menoslife2 = 20 - 12
             fight_wizard = life_wizard - menoslife2
             life_wizard = fight_wizard
@@ -320,6 +396,11 @@ def Battles(player, machine):
             print(branco + "- Attack Paladin -".center(150))
             print(vermelho + f"Wizard: -{menoslife2}HP".center(150))
             print(verde + f"Wizard: {life_wizard}HP".center(150))
+
+            if life_wizard <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → PALADIN WIN ← -".center(150))
+                print(cinza + "-" * 150)
 
             print(cinza + "-" * 150)
 
@@ -351,6 +432,12 @@ def Battles(player, machine):
 
             sleep(2)
 
+            if life_wizard <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → WARRIOR WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
+
             menoslife2 = 26 - 20
             fight_warrior = life_warrior - menoslife2
             life_warrior = fight_warrior
@@ -358,6 +445,12 @@ def Battles(player, machine):
             print(branco + "- Attack Wizard -".center(150))
             print(vermelho + f"Warrior: -{menoslife2}HP".center(150))
             print(verde + f"Warrior: {life_warrior}HP".center(150))
+
+            if life_warrior <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → WIZARD WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
 
             print(cinza + "-" * 150)
 
@@ -389,6 +482,12 @@ def Battles(player, machine):
 
             sleep(2)
 
+            if life_paladin <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → ASSASSIN WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
+
             menoslife2 = 20 - 14
             fight_assassin = life_assassin - menoslife2
             life_assassin = fight_assassin
@@ -396,6 +495,12 @@ def Battles(player, machine):
             print(branco + "- Attack Paladin -".center(150))
             print(vermelho + f"Assassin: -{menoslife2}HP".center(150))
             print(verde + f"Assassin: {life_assassin}HP".center(150))            
+
+            if life_assassin <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → PALADIN WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
 
             print(cinza + "-" * 150)
 
@@ -427,6 +532,12 @@ def Battles(player, machine):
 
             sleep(2)
 
+            if life_shooter <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → ASSASSIN WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
+
             menoslife2 = 36 - 14
             fight_assassin = life_assassin - menoslife2
             life_assassin = fight_assassin
@@ -434,5 +545,11 @@ def Battles(player, machine):
             print(branco + "- Attack Shooter -".center(150))
             print(vermelho + f"Assassin: -{menoslife2}HP".center(150))
             print(verde + f"Assassin: {life_assassin}HP".center(150))            
+
+            if life_assassin <= 0:
+                print(cinza + "-" * 150)
+                print(branco + "- → SHOOTER WIN ← -".center(150))
+                print(cinza + "-" * 150)
+                break
 
             print(cinza + "-" * 150)            
