@@ -3,7 +3,7 @@
 ## 🗂 Project description
 
 <p>
-	A battle RPG, in which you choose your warrior class, and fight your machine. The battle is formed by rounds, and is based on the attributes of each warrior class.
+	A battle Text, in which you choose your warrior class, and fight your machine. The battle is formed by rounds, and is based on the attributes of each warrior class.
     <h4 align="center">-- Atributos --</h4>
 
     Warrior = HP80 / ATK26 / DEF20 / VEL22
