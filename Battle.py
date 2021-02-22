@@ -1,5 +1,6 @@
 # Libs
 from Battles import Battles
+from random import randint
 from time import sleep
 
 # Colors
@@ -43,8 +44,8 @@ while True:
         while player != 1 and player != 2 and player != 3 and player != 4 and player != 5:
             player = int(input(branco + "Selecione a classe: "))
         
-        machine = 5
-        #machine = randint(1, 5)
+        #machine = 4
+        machine = randint(1, 5)
 
         Battles(player, machine)
 
