@@ -44,10 +44,47 @@ while True:
         while player != 1 and player != 2 and player != 3 and player != 4 and player != 5:
             player = int(input(branco + "Selecione a classe: "))
         
-        #machine = 2
-        machine = randint(1, 5)
+        machine = 5
+        #machine = randint(1, 5)
 
-        Battles(player, machine)
+        ## Infs Battle
+        info_player = ""
+        info_machine = ""
+
+        if player == 1:
+            info_player = "Warrior"
+        elif player == 2:
+            info_player = "Paladin"
+        elif player == 3:
+            info_player = "Shooter"
+        elif player == 4:
+            info_player = "Wizard"
+        elif player == 5:
+            info_player = "Assassin"
+
+        if machine == 1:
+            info_machine = "Warrior"
+        elif machine == 2:
+            info_machine = "Paladin"
+        elif machine == 3:
+            info_machine = "Shooter"
+        elif machine == 4:
+            info_machine = "Wizard"
+        elif machine == 5:
+            info_machine = "Assassin"
+
+        # Empate
+        if player == machine:
+            print(branco + "-- Class --".center(150))
+            print(f"Player: {info_player}")
+            print(f"Machine: {info_machine}")
+            
+            print(cinza + "=" * 150)
+
+            print(branco + "- Select again! -".center(150))
+
+        else:
+            Battles(player, machine)
 
         print(cinza + "=" * 150)
         
