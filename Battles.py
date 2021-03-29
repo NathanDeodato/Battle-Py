@@ -49,6 +49,8 @@ def Battles(player, machine):
     print(f"Player: {info_player}")
     print(f"Machine: {info_machine}")
 
+
+
     ## Combats
     rounds = 1
 
@@ -106,7 +108,7 @@ def Battles(player, machine):
             print(cinza + "-" * 150)
 
     ### Paladin vs Shooter
-    if player == 2 and machine == 3 or player == 3 and machine == 2:
+    elif player == 2 and machine == 3 or player == 3 and machine == 2:
         print(cinza + "=" * 150)
 
         life_paladin = 90
@@ -156,7 +158,7 @@ def Battles(player, machine):
             print(cinza + "-" * 150)
 
     ### Shooter vs Wizard
-    if player == 3 and machine == 4 or player == 4 and machine == 3:
+    elif player == 3 and machine == 4 or player == 4 and machine == 3:
         print(cinza + "=" * 150)
 
         life_shooter = 55
@@ -206,7 +208,7 @@ def Battles(player, machine):
             print(cinza + "-" * 150)
 
     ### Wizard vs Assassin
-    if player == 4 and machine == 5 or player == 5 and machine == 4:
+    elif player == 4 and machine == 5 or player == 5 and machine == 4:
         print(cinza + "=" * 150)
 
         life_wizard = 60 
@@ -235,7 +237,7 @@ def Battles(player, machine):
 
             if life_wizard <= 0:
                 print(cinza + "-" * 150)
-                print(branco + "- → SHOOTER WIN ← -".center(150))
+                print(branco + "- → ASSASSIN WIN ← -".center(150))
                 print(cinza + "-" * 150)
                 break
 
@@ -256,7 +258,7 @@ def Battles(player, machine):
             print(cinza + "-" * 150)
 
     ### Assassin vs warrior
-    if player == 5 and machine == 1 or player == 1 and machine == 5:
+    elif player == 5 and machine == 1 or player == 1 and machine == 5:
         print(cinza + "=" * 150)
 
         life_assassin = 65
@@ -306,7 +308,7 @@ def Battles(player, machine):
             print(cinza + "-" * 150)
 
     ### Warrior vs Shooter
-    if player == 1 and machine == 3 or player == 3 and machine == 1:
+    elif player == 1 and machine == 3 or player == 3 and machine == 1:
         print(cinza + "=" * 150)
 
         life_warrior = 80
@@ -356,7 +358,7 @@ def Battles(player, machine):
             print(cinza + "-" * 150)
 
     ### Paladin vs wizard
-    if player == 2 and machine == 4 or player == 4 and machine == 2:
+    elif player == 2 and machine == 4 or player == 4 and machine == 2:
         print(cinza + "=" * 150)
 
         life_paladin = 90
@@ -405,7 +407,7 @@ def Battles(player, machine):
             print(cinza + "-" * 150)
 
     ### Wizard vs Warrior
-    if player ==  4 and machine == 1 or player == 1 and machine == 4:
+    elif player ==  4 and machine == 1 or player == 1 and machine == 4:
         print(cinza + "=" * 150)
         
         life_wizard = 60
@@ -455,7 +457,7 @@ def Battles(player, machine):
             print(cinza + "-" * 150)
 
     ### Paladin vs Assassin
-    if player == 2 and machine == 5 or player == 5 and machine == 2:
+    elif player == 2 and machine == 5 or player == 5 and machine == 2:
         print(cinza + "=" * 150)
 
         life_paladin = 90
@@ -505,7 +507,7 @@ def Battles(player, machine):
             print(cinza + "-" * 150)
 
     ## Assassin vs Shooter
-    if player == 3 and machine == 5 or player == 5 and machine == 3:
+    elif player == 3 and machine == 5 or player == 5 and machine == 3:
         print(cinza + "=" * 150)
 
         life_shooter = 55
